@@ -8,7 +8,7 @@ function TodoList({ todos, onComplete }) {
           <span >
             {todo.text}
           </span>
-          {!todo.completed && (
+          {todo.completed && (
             <button onClick={() => onComplete(todo.id)}>Complete</button>
           )}
         </li>
