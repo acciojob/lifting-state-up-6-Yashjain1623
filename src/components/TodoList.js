@@ -5,7 +5,7 @@ function TodoList({ todos, onComplete }) {
     <ul>
       {todos.map((todo) => (
         <li key={todo.id}>
-          <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+          <span >
             {todo.text}
           </span>
           {!todo.completed && (
